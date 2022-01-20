@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="This porject clone pexals photo search app with vanilla js">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pexals clone with js</title>
+    <!-- fontasome cdn -->
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+    <!-- favicon link -->
+    <link rel="shortcut icon" href="https://cdn-images-1.medium.com/max/1200/1*klT6dL2tyIePIEIZfGTSRQ.png" type="image/x-icon">
+    <!-- style css -->
+    <link rel="stylesheet" href="./css/main.css" />
+</head>
+
+<body>
+
+    <!-- navbar section start -->
+    <div class="navigation">
+        <a href="#" class="logo">
+            <img src="https://cdn-images-1.medium.com/max/1200/1*klT6dL2tyIePIEIZfGTSRQ.png" alt="logo-png">
+            <span>Pexals</span>
+        </a>
+        <div class="search-box">
+            <input type="text" class="nav-search-container" placeholder="Search for free photos and videos">
+            <button type="submit" class="nav-search-btn">
+                <i class="fas fa-search"></i>
+            </button>
+        </div>
+        <div class="navigation_overlay">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a href="#">Search Photo</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#">Instroduction</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#">
+                        <i class="far fa-bell"></i>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="#">
+                        <i class="fas fa-user"></i>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <!-- navbar section end -->
+
+    <!-- home section start -->
+    <div class="home">
+        <div class="home-display">
+            <h1>
+                The best free stock photos, royalty free images & videos shared by creators.
+            </h1>
+            <div class="search-container">
+                <form class="form">
+                    <input type="text" class="search-bars" placeholder="Search for free photos and videos">
+                    <button class="search-btn">
+                        <i class="fas fa-search"></i>
+                    </button>
+                </form>
+                 <select id="select" class="select">
+                     <option value="Photo">Photo</option>
+                     <option value="Video">Video</option>
+                 </select>
+                <h4 class="search-box_description"><span>Suggested</span> code connection network coding data technology more </h4>
+            </div>
+        </div>
+    </div>
+    <!-- home section finish -->
+
+
+    <!-- main section start -->
+    <div class="main-section">
+        <main></main>
+        <button class="load-more">Load More</button>
+    </div>
+    <!-- main section end -->
+
+    <!-- modal section start -->
+    <div class="modal-wrapper">
+        <div class="cancel-btn">
+            <button>
+                <i class="fas fa-times"></i>
+            </button>
+        </div>
+        <div class="modal-video_overlay">
+            <video autoplay muted controls></video>
+        </div>
+    </div>
+    <!-- modal section finish -->
+
+    <!-- INDEX JS FILE -->
+    <script src="./index.js"></script>
+</body>
+
+</html>
